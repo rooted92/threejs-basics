@@ -3,6 +3,7 @@ import WebGL from 'three/addons/capabilities/WebGL.js';
 
 if(WebGL.isWebGLAvailable()) {
     // Initiate function or other initializations here
+    // hoisting the animate function to the top
     animate();
 } else {
     const warning = WebGL.getWegGLErrorMessage();
@@ -31,5 +32,3 @@ function animate() {
     cube.rotation.y += 0.01;
     renderer.render(scene, camera);
 }
-
-animate();

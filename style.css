@@ -18,3 +18,17 @@ body {
 ul li {
     list-style-type: none;
 }
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    color: tomato;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #333;
+}
